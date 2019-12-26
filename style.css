@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    height: 200px;
+    padding-top: 20px;
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 1px solid #70b231;
+}
+
+input[type="submit"]{
+    background-color: #70b231;
+    border-radius: 5px;
+    padding: 3px 45px;
+    margin-top: 6px;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    box-shadow: 0px 0px 20px rgb(121, 119, 119) inset;
+}
+.widget input{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body{
+    background-image: url(./img/paven.png);
+}
+.img-titulo{
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+}
+header>h1>a {
+    font-family: impact;
+    color: #70b231;
+    font-size: 50px;
+    text-shadow: 0px 2px 1px #333333;
+    text-decoration: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 10px;
+    transition: all 300ms;
+}
+header>h1>a:hover{
+    text-shadow: 0px 2px 1px #333333, 1px 1px 7px #70b231
+}
+#menu {
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    margin-top: 40px;
+    display: inline-block;
+    font-family: serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1090px;
+}
+#menu ul li {
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid grey;
+    transition: all 300ms;
+}
+#menu ul>li>a{
+    color: white;
+    text-decoration: none;
+    padding:0 20px;
+    display: block;
+}
+#menu ul li:first-child {
+    border-left: 1px solid grey;
+}
+#menu >ul li:hover{
+    background-color: #70b231;
+    box-shadow: inset 1px 1px 6px #000;
+}
+/* Menu Desplegable  */
+#menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 120px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+#menu > ul > li > ul > li {
+    width: 100%;
+}
+#menu > ul > li:hover > ul{
+    display: block;
+    
+}
+#menu > ul > li:hover > ul > li{
+    background-color: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+}
+#menu > ul > li:hover > ul > li a{
+    color: #666666;
+}
+#menu > ul > li:hover > ul > li:hover{
+    background-color: #70b231;
+}
+#menu > ul > li:hover > ul > li a:hover{
+  color: white;
+}
+.content {
+    width: 1200px;
+    min-height:1100px;
+    margin: 0px auto;
+}
+.menu-lateral, .frases {
+    background-color:white ;
+    width: 200px;
+    text-align: center;
+    float: left;
+    margin: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.widget> form a {
+    text-decoration: none;
+    list-style: none;
+    color: #70b231;
+    font-size: 16px;
+}
+.menu-lateral .widget {
+    text-align: center;
+    padding: 8px 20px;
+    width: 180px;
+    margin: 0px auto;
+}
+.enlaces li  {
+   margin-top: 8px;
+   margin-bottom: 5px;
+   margin-left:2px;
+   list-style: square;
+   font-size: 14px;
+}
+.enlaces li:hover{
+    color: #000;
+}
+.enlaces li a {
+    color: #70b231;
+}
+.clearfloat{
+    float: none;
+    clear: both;
+}
+.frases a {
+    color: #70b231;
+}
+
+#principal {
+    float: right;
+    width: 62%;
+}
+.front,
+.back,
+.instructor{
+    background-color:white ;
+    float: right;
+    margin: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 900px;
+    border: 1px solid black;
+}
+.noticias > h2{
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid black;
+    text-align: center;
+} 
+.noticias a{
+    color: #70b231;
+}
+.noticias p{
+    margin:0px 12px;
+}
+.back>h2{
+    color: maroon;
+}
+.instructor>h2{
+    color: chocolate;
+}
+h5 {
+    color:#a7a7a7;
+    margin:0px 12px 15px 12px;
+}
+.widget h4{
+    display: block;
+    background-color: #f2f3f2;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.widget .v1{
+    color: maroon;
+}
+.widget .v2{
+    color: chocolate;
+}
+.sticker1, .Sticker2{
+    position: absolute;
+    margin-top: -25px;
+    z-index: 0;
+}
+.Sticker2{
+   margin-left: 860px; 
+}
+.link-noticias{
+   float: right;
+   margin-bottom: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #70b231;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+footer{
+    background-color: #333333;
+    color:white;
+    text-align: center;
+    line-height:20px;
+    margin: 0px auto;
+    padding:15px 0px
+}
+footer a {
+    color: #70b231;
+}
